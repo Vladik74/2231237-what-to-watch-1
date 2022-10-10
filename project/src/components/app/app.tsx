@@ -1,8 +1,7 @@
-import MainPage from '../../pages/main-page/main-page';
-import {MainPageProps} from '../../pages/main-page/main-page';
+import MainPage, {MainPageProps} from '../../pages/main-page/main-page';
 
-function App(mainPageProps:MainPageProps): JSX.Element {
-  return MainPage(mainPageProps);
+function App(props: MainPageProps): JSX.Element {
+  return MainPage(props);
 }
 
 export default App;

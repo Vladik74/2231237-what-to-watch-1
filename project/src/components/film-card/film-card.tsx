@@ -1,13 +1,14 @@
 type FilmCardProps = {
   name: string,
-  imgSrc: string
+  img: string
 }
 
-function FilmCard({name, imgSrc}: FilmCardProps) {
+function FilmCard(props: FilmCardProps) {
+  const {name, img} = props;
   return (
     <article className="small-film-card catalog__films-card">
       <div className="small-film-card__image">
-        <img src={imgSrc} alt={name} width="280" height="175"/>
+        <img src={img} alt={name} width="280" height="175"/>
       </div>
       <h3 className="small-film-card__title">
         <a className="small-film-card__link" href="film-page.html">{name}</a>

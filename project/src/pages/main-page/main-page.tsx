@@ -6,7 +6,8 @@ export type MainPageProps = {
   year: number
 }
 
-function MainPage({name, genre, year}: MainPageProps) {
+function MainPage(props: MainPageProps) {
+  const {name, genre, year} = props;
   return (
     <>
       <section className="film-card">
@@ -18,7 +19,7 @@ function MainPage({name, genre, year}: MainPageProps) {
 
         <header className="page-header film-card__head">
           <div className="logo">
-            <a className="logo__link">
+            <a href={'/'} className="logo__link">
               <span className="logo__letter logo__letter--1">W</span>
               <span className="logo__letter logo__letter--2">T</span>
               <span className="logo__letter logo__letter--3">W</span>
@@ -32,7 +33,7 @@ function MainPage({name, genre, year}: MainPageProps) {
               </div>
             </li>
             <li className="user-block__item">
-              <a className="user-block__link">Sign out</a>
+              <a href={'/'} className="user-block__link">Sign out</a>
             </li>
           </ul>
         </header>
@@ -110,26 +111,26 @@ function MainPage({name, genre, year}: MainPageProps) {
 
           <div className="catalog__films-list">
             <FilmCard name={"Fantastic Beasts: The Crimes of Grindelwald"}
-                      imgSrc={"img/fantastic-beasts-the-crimes-of-grindelwald.jpg"}/>
-            <FilmCard name={"Bohemian Rhapsody"} imgSrc={"img/bohemian-rhapsody.jpg"}/>
-            <FilmCard name={"Macbeth"} imgSrc={"img/macbeth.jpg"}/>
-            <FilmCard name={"Aviator"} imgSrc={"img/aviator.jpg"}/>
-            <FilmCard name={"We need to talk about Kevin"} imgSrc={"img/we-need-to-talk-about-kevin.jpg"}/>
-            <FilmCard name={"What We Do in the Shadows"} imgSrc={"img/what-we-do-in-the-shadows.jpg"}/>
-            <FilmCard name={"Revenant"} imgSrc={"img/revenant.jpg"}/>
-            <FilmCard name={"Johnny English"} imgSrc={"img/johnny-english.jpg"}/>
-            <FilmCard name={"Shutter Island"} imgSrc={"img/shutter-island.jpg"}/>
-            <FilmCard name={"Pulp Fiction"} imgSrc={"img/pulp-fiction.jpg"}/>
-            <FilmCard name={"No Country for Old Men"} imgSrc={"img/no-country-for-old-men.jpg"}/>
-            <FilmCard name={"Snatch"} imgSrc={"img/snatch.jpg"}/>
-            <FilmCard name={"Moonrise Kingdom"} imgSrc={"img/moonrise-kingdom.jpg"}/>
-            <FilmCard name={"Seven Years in Tibet"} imgSrc={"img/seven-years-in-tibet.jpg"}/>
-            <FilmCard name={"Midnight Special"} imgSrc={"img/midnight-special.jpg"}/>
-            <FilmCard name={"War of the Worlds"} imgSrc={"img/war-of-the-worlds.jpg"}/>
-            <FilmCard name={"Dardjeeling Limited"} imgSrc={"img/dardjeeling-limited.jpg"}/>
-            <FilmCard name={"Orlando"} imgSrc={"img/orlando.jpg"}/>
-            <FilmCard name={"Mindhunter"} imgSrc={"img/mindhunter.jpg"}/>
-            <FilmCard name={"Midnight Special"} imgSrc={"img/midnight-special.jpg"}/>
+                      img={"img/fantastic-beasts-the-crimes-of-grindelwald.jpg"}/>
+            <FilmCard name={"Bohemian Rhapsody"} img={"img/bohemian-rhapsody.jpg"}/>
+            <FilmCard name={"Macbeth"} img={"img/macbeth.jpg"}/>
+            <FilmCard name={"Aviator"} img={"img/aviator.jpg"}/>
+            <FilmCard name={"We need to talk about Kevin"} img={"img/we-need-to-talk-about-kevin.jpg"}/>
+            <FilmCard name={"What We Do in the Shadows"} img={"img/what-we-do-in-the-shadows.jpg"}/>
+            <FilmCard name={"Revenant"} img={"img/revenant.jpg"}/>
+            <FilmCard name={"Johnny English"} img={"img/johnny-english.jpg"}/>
+            <FilmCard name={"Shutter Island"} img={"img/shutter-island.jpg"}/>
+            <FilmCard name={"Pulp Fiction"} img={"img/pulp-fiction.jpg"}/>
+            <FilmCard name={"No Country for Old Men"} img={"img/no-country-for-old-men.jpg"}/>
+            <FilmCard name={"Snatch"} img={"img/snatch.jpg"}/>
+            <FilmCard name={"Moonrise Kingdom"} img={"img/moonrise-kingdom.jpg"}/>
+            <FilmCard name={"Seven Years in Tibet"} img={"img/seven-years-in-tibet.jpg"}/>
+            <FilmCard name={"Midnight Special"} img={"img/midnight-special.jpg"}/>
+            <FilmCard name={"War of the Worlds"} img={"img/war-of-the-worlds.jpg"}/>
+            <FilmCard name={"Dardjeeling Limited"} img={"img/dardjeeling-limited.jpg"}/>
+            <FilmCard name={"Orlando"} img={"img/orlando.jpg"}/>
+            <FilmCard name={"Mindhunter"} img={"img/mindhunter.jpg"}/>
+            <FilmCard name={"Midnight Special"} img={"img/midnight-special.jpg"}/>
           </div>
 
           <div className="catalog__more">
@@ -139,7 +140,7 @@ function MainPage({name, genre, year}: MainPageProps) {
 
         <footer className="page-footer">
           <div className="logo">
-            <a className="logo__link logo__link--light">
+            <a href={'/'} className="logo__link logo__link--light">
               <span className="logo__letter logo__letter--1">W</span>
               <span className="logo__letter logo__letter--2">T</span>
               <span className="logo__letter logo__letter--3">W</span>

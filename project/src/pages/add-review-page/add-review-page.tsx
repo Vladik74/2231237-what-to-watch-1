@@ -93,7 +93,6 @@ function AddReviewPage() {
           </div>
         </form>
       </div>
-
     </section>
   )
 }
